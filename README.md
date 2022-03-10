@@ -1,16 +1,46 @@
-## Homework | Week 2
+# CommandMe App
 
-Elimizde bir kitap listesi var. Bu uygulamanın 2 görevi var.
-1. Uygulama içerisindeki tüm kitapları çıktı olarak göstermek.
-2. Girdi olarak verilen kitap ismini varsa ekrana bastırmak yok ise kitabın mevcut olmadığına dair çıktı yazdırmak.
+> A simple terminal app that lists or searches books.
 
-### list command
-```
+## Table of Contents
+
+* [Setup](#setup)
+* [Usage](#usage)
+* [Screenshots](#screenshots)
+* [Contact](#contact)
+* [License](#license)
+
+## Setup
+
+To run this project you must have Golang installed in your PC.
+
+## Usage
+
+There are 2 commands you can write after running the main.go file:
+
+* "list" command: Lists all books that system has.
+* "search" command: Searches given book. If given book is in the list returns book's name, otherwise returns info about that book is not in the list.
+
+```golang
+// returns all books
 go run main.go list
-```
-Bu komut ile uygulama içerisindeki tüm kitapları çıktı olarak görmek istiyoruz.
 
-### search command 
+// returns "The Hobbit"
+go run main.go search the hobbit
+
+// returns "Entered book is not in the list"
+go run main.go search Harry Potter
 ```
-go run main.go search <bookName>
-go run main.go search Lord of the Ring: The Return of 
+
+## Screenshots
+
+![Example screenshot](./img/listCommand.png)
+![Example screenshot](./img/searchCommand.png)
+
+## Contact
+
+Created by [@horzu](https://horzu.github.io/) - feel free to contact me!
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
